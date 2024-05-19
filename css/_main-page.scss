@@ -5,7 +5,7 @@
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0.5rem;
   font-size: 1.125rem;
   border-bottom: 1px solid $white;
 
@@ -79,9 +79,8 @@
   }
 }
 
-// MAIN
+// MAIN - banner
 .main {
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,18 +91,22 @@
     justify-content: center;
     align-items: center;
     background-color: $black50;
+    width: 100%;
+    height: 100%;
   }
   &__banner-image {
-    width: 100%;
+    object-fit: cover;
     z-index: -1;
   }
 }
 
 h1 {
   font-size: 4.5rem;
-  width: 30%;
+  width: 35%;
   position: absolute;
 }
+
+// MAIN - contacts side-section
 
 .contacts {
   &__items {
@@ -119,4 +122,21 @@ h1 {
       font-size: 1.5rem;
     }
   }
+  &__close-button {
+    justify-self: start;
+  }
+}
+
+.contacts {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  background-color: pink;
+  width: 25%;
+  height: 100%;
 }
