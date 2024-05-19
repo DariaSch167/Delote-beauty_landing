@@ -58,6 +58,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 .footer-menu__item {
   padding-top: 1.5rem;
