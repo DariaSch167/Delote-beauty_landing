@@ -223,7 +223,46 @@ h1 {
 }
 
 .gallery {
-  margin-top: 7.5rem;
+  margin: 7.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery h2 {
+  font-size: 3rem;
+  margin-bottom: 6rem;
+}
+.gallery__filter {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.gallery__filter-btn {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: inherit;
+  transition: 0.3s ease-in-out;
+}
+.gallery__filter-btn::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: #cdaa7d;
+  transition: 0.4s ease-out;
+}
+.gallery__filter-btn:hover {
+  color: #cdaa7d;
+  cursor: pointer;
+}
+.gallery__filter-btn:hover:before {
+  width: 100%;
 }
 
 html {
