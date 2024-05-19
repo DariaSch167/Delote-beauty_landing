@@ -264,6 +264,12 @@ h1 {
 .gallery__filter-btn:hover:before {
   width: 100%;
 }
+.gallery__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  justify-content: space-around;
+  gap: 4rem;
+}
 
 html {
   box-sizing: border-box;
