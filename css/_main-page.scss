@@ -226,3 +226,17 @@ h1 {
     }
   }
 }
+
+// MAIN - brands section
+.brands {
+  margin-top: $block_m-top;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    opacity: 0.5;
+  }
+}

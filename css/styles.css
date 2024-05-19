@@ -210,6 +210,18 @@ h1 {
   color: #cdaa7d;
 }
 
+.brands {
+  margin-top: 7.5rem;
+}
+.brands__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.brands__item {
+  opacity: 0.5;
+}
+
 html {
   box-sizing: border-box;
 }
