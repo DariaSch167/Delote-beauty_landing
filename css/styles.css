@@ -222,6 +222,10 @@ h1 {
   opacity: 0.5;
 }
 
+.gallery {
+  margin-top: 7.5rem;
+}
+
 html {
   box-sizing: border-box;
 }
