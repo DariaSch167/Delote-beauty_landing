@@ -1,4 +1,6 @@
 .header-menu {
+  position: absolute;
+  z-index: 1;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -70,12 +72,52 @@
   text-align: center;
 }
 
+.main {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main__banner-image {
+  width: 100%;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 4.5rem;
+  width: 30%;
+  position: absolute;
+}
+
+.contacts__items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__item {
+  padding-top: 1.5rem;
+}
+.contacts__item:first-of-type {
+  padding-top: 0;
+  padding-bottom: 1.125rem;
+  font-size: 1.5rem;
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
+  position: relative;
   font-size: 16px;
   color: #ffffff;
   background-color: #111111;
@@ -86,8 +128,12 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
   min-height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 80%;
   margin: 0 auto;
   background-color: rgb(145, 201, 183);
 }

@@ -7,6 +7,7 @@ body {
 }
 
 body {
+  position: relative;
   font-size: 16px;
   color: $white;
   background-color: $background;
@@ -17,8 +18,12 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
   min-height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 80%;
   margin: 0 auto;
   background-color: rgb(145, 201, 183); //test block coloring
 }

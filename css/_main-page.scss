@@ -1,11 +1,14 @@
 // HEADER
 .header-menu {
+  position: absolute;
+  z-index: 1;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   padding: 2rem 1.5rem;
   font-size: 1.125rem;
   border-bottom: 1px solid $white;
+
   &__items {
     display: flex;
     padding: 0;
@@ -15,9 +18,11 @@
     padding: 0;
     margin-left: 5.625rem;
   }
+
   &__logo {
     margin-left: 5.625rem;
   }
+
   &__link {
     text-decoration: none;
     color: inherit;
@@ -53,6 +58,7 @@
   font-size: 1.125rem;
   border-top: 1px solid $white;
   border-bottom: 1px solid $white;
+
   &__items {
     list-style-type: none;
     display: flex;
@@ -66,6 +72,7 @@
       font-size: 1.5rem;
     }
   }
+
   &__copyright {
     padding: 2.5em 0;
     text-align: center;
@@ -73,3 +80,43 @@
 }
 
 // MAIN
+.main {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black50;
+  }
+  &__banner-image {
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+h1 {
+  font-size: 4.5rem;
+  width: 30%;
+  position: absolute;
+}
+
+.contacts {
+  &__items {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    padding-top: 1.5rem;
+    &:first-of-type {
+      padding-top: 0;
+      padding-bottom: 1.125rem;
+      font-size: 1.5rem;
+    }
+  }
+}
