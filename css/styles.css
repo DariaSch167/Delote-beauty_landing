@@ -154,10 +154,60 @@ h1 {
 }
 .quote__text {
   text-align: center;
-  font-size: 1.6875rem;
+  font-size: 1.625rem;
   line-height: 1.3;
   margin: 0;
   padding-bottom: 1.5rem;
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  justify-content: space-around;
+  row-gap: 4rem;
+  margin-top: 7.5rem;
+}
+.offer__image {
+  display: flex;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.offer__image-tint {
+  position: relative;
+}
+.offer__image-tint::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.offer__image-frame {
+  position: relative;
+}
+.offer__image-frame::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  position: absolute;
+  border: 1px solid #cdaa7d;
+}
+.offer__title {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.offer__title h3 {
+  font-size: 1.625rem;
+}
+.offer__title:hover {
+  color: #cdaa7d;
 }
 
 html {
