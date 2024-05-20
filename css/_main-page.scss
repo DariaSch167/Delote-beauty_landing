@@ -243,18 +243,22 @@ h1 {
 
 // MAIN - gallery section
 .gallery {
-  margin: $block_m-top 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: $block_m-top 0;
+
   & h2 {
     font-size: 3rem;
     margin-bottom: 6rem;
+    text-align: center;
   }
+
   &__filter {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto 4rem;
     width: 60%;
+
     &-btn {
       display: inline-block;
       position: relative;
@@ -283,10 +287,23 @@ h1 {
       }
     }
   }
-  &__images {
+
+  &__cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, 30%);
-    justify-content: space-around;
-    gap: 4rem;
+    justify-content: space-evenly;
+    grid-gap: 1.5rem;
+  }
+
+  &__card {
+    max-width: 26rem;
+    max-height: 26rem;
+    &-image {
+      width: 100%;
+      object-fit: cover;
+    }
+    &__hidden {
+      display: none;
+    }
   }
 }

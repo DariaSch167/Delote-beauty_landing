@@ -223,18 +223,19 @@ h1 {
 }
 
 .gallery {
-  margin: 7.5rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 7.5rem 0;
 }
 .gallery h2 {
   font-size: 3rem;
   margin-bottom: 6rem;
+  text-align: center;
 }
 .gallery__filter {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto 4rem;
   width: 60%;
 }
 .gallery__filter-btn {
@@ -264,11 +265,23 @@ h1 {
 .gallery__filter-btn:hover:before {
   width: 100%;
 }
-.gallery__images {
+.gallery__cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, 30%);
-  justify-content: space-around;
-  gap: 4rem;
+  justify-content: space-evenly;
+  grid-gap: 1.5rem;
+}
+.gallery__card {
+  max-width: 26rem;
+  max-height: 26rem;
+}
+.gallery__card-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery__card__hidden {
+  display: none;
 }
 
 html {
