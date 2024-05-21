@@ -1,12 +1,12 @@
 .header-menu {
   position: absolute;
   z-index: 1;
-  display: inline-flex;
-  justify-content: flex-start;
+  display: flex;
   align-items: center;
   padding: 2rem 0.5rem;
   font-size: 1.125rem;
   border-bottom: 1px solid #ffffff;
+  top: 0;
 }
 .header-menu__items {
   display: flex;
@@ -139,6 +139,9 @@ h1 {
   background-color: transparent;
   border: none;
   outline: none;
+}
+.contacts__hidden {
+  display: none;
 }
 
 .quote {
@@ -276,9 +279,6 @@ h1 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.gallery__card__hidden {
-  display: none;
 }
 
 html {
