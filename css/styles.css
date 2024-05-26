@@ -47,6 +47,15 @@
   width: 100%;
 }
 
+.social-svg__stroke-1,
+.social-svg__stroke-2 {
+  transition: stroke 0.4s ease-in-out;
+}
+
+.social-svg__fill {
+  transition: fill 0.4s ease-in-out;
+}
+
 .footer-menu {
   display: flex;
   justify-content: space-between;

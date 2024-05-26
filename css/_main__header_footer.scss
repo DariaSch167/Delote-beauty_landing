@@ -51,6 +51,16 @@
   }
 }
 
+// social-link coloring properties
+.social-svg__stroke-1,
+.social-svg__stroke-2 {
+  transition: stroke 0.4s ease-in-out;
+}
+
+.social-svg__fill {
+  transition: fill 0.4s ease-in-out;
+}
+
 // FOOTER
 .footer-menu {
   display: flex;
