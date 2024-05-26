@@ -1,24 +1,3 @@
-// MAIN - contacts section - close button
-const contacts = document.querySelector(".contacts");
-const contactsBtn = document.getElementById("contacts__close");
-const headerMenu = document.querySelector(".header-menu ");
-
-function closeSidebar() {
-  contacts.classList.add("contacts__hidden");
-  // headerMenu.css({
-  //   left: "50%",
-  //   transform: "translate(-50%)",
-  // });
-  // - НЕ РАБОТАЕТ
-}
-
-document.addEventListener(
-  "DOMContentLoaded",
-  contacts.classList.remove("contacts__hidden")
-);
-
-contactsBtn.addEventListener("click", closeSidebar);
-
 // MAIN - gallery section - add/filter data functions
 const galleryCards = document.querySelector(".gallery__cards");
 
@@ -94,9 +73,10 @@ function fullGalleryData() {
   }
 }
 
-// Gallery full content
+// Gallery default content
 document.addEventListener("DOMContentLoaded", fullGalleryData);
 
+// Gallery full content
 const btnShowAll = document.getElementById("gallery_show-all");
 btnShowAll.onclick = function () {
   galleryCards.innerHTML = "";
@@ -136,21 +116,3 @@ btnFilterThree.onclick = function () {
     createCard(card);
   });
 };
-
-// HEADER-NAV - social hover
-const socialLink = document.querySelector(".header-menu__socials-link");
-const socialStrokeOne = document.querySelector(".social-svg__stroke-1");
-const socialStrokeTwo = document.querySelector(".social-svg__stroke-2");
-const socialFill = document.querySelector(".social-svg__fill");
-
-socialLink.addEventListener("mouseover", function () {
-  socialStrokeOne.style.stroke = "#cdaa7d";
-  socialStrokeTwo.style.stroke = "#cdaa7d";
-  socialFill.style.fill = "#cdaa7d";
-});
-
-socialLink.addEventListener("mouseout", function () {
-  socialStrokeOne.style.stroke = "white";
-  socialStrokeTwo.style.stroke = "white";
-  socialFill.style.fill = "white";
-});

@@ -1,0 +1,76 @@
+// MAIN - banner
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black50;
+
+    &-image {
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  }
+}
+
+h1 {
+  font-size: 4.5rem;
+  width: 35%;
+  position: absolute;
+}
+
+// MAIN - contacts side-section
+.contacts {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: $background;
+  width: 25%;
+  height: 100%;
+  padding: 2.5rem 4.5rem;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+
+  &__items {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  &__item {
+    padding-top: 1.5rem;
+    &:first-of-type {
+      padding-top: 0;
+      padding-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__close-button {
+    display: inline;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  &__hidden {
+    display: none;
+  }
+}
