@@ -23,7 +23,7 @@
 
 h1 {
   font-size: 4.5rem;
-  width: 35%;
+  width: 30%;
   position: absolute;
 }
 
@@ -39,7 +39,7 @@ h1 {
   align-items: flex-start;
   background-color: $background;
   width: 25%;
-  height: 100%;
+  height: 100vh;
   padding: 2.5rem 4.5rem;
 
   &__inner {
@@ -47,6 +47,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     height: 80%;
+    margin-bottom: 2rem;
   }
 
   &__items {
