@@ -8,7 +8,9 @@
   font-size: 1.125rem;
   border-bottom: 1px solid $white;
   top: 0;
-
+  left: 50%; // option 1: center Header nav by defoult
+  transform: translateX(-50%); // option 1
+  // transition: all 0.3s ease-in-out; Figma option 2: center after contacts close
   &__items {
     display: flex;
     padding: 0;

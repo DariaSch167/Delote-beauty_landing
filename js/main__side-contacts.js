@@ -10,11 +10,10 @@ document.addEventListener(
 
 function closeSidebar() {
   contacts.classList.add("contacts__hidden");
-  // headerMenu.css({
-  //   left: "50%",
-  //   transform: "translate(-50%)",
-  // });
-  // - НЕ РАБОТАЕТ
+
+  // headerMenu.style.left = "50%";
+  // headerMenu.style.transform = "translateX(-50%)";
+  // Figma option 2: center header menu after close contacts
 }
 
 contactsBtn.addEventListener("click", closeSidebar);

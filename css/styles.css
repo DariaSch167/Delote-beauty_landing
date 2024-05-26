@@ -7,6 +7,8 @@
   font-size: 1.125rem;
   border-bottom: 1px solid #ffffff;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header-menu__items {
   display: flex;
