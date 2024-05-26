@@ -4,6 +4,8 @@
   z-index: 1;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 70%;
   padding: 2rem 0.5rem;
   font-size: 1.125rem;
   border-bottom: 1px solid $white;
@@ -13,17 +15,19 @@
   // transition: all 0.3s ease-in-out; Figma option 2: center after contacts close
   &__items {
     display: flex;
+    justify-content: space-between;
+    width: 30%;
     padding: 0;
   }
   &__item {
     list-style-type: none;
     padding: 0;
-    margin-left: 5.625rem;
+    // margin-left: 5.625rem; - according to Figma, changed to flexible
   }
 
-  &__logo {
-    margin-left: 5.625rem;
-  }
+  // &__logo {
+  //   margin-left: 5.625rem; - according to Figma, changed to flexible
+  // }
 
   &__link {
     text-decoration: none;

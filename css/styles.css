@@ -3,6 +3,8 @@
   z-index: 1;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 70%;
   padding: 2rem 0.5rem;
   font-size: 1.125rem;
   border-bottom: 1px solid #ffffff;
@@ -12,15 +14,13 @@
 }
 .header-menu__items {
   display: flex;
+  justify-content: space-between;
+  width: 30%;
   padding: 0;
 }
 .header-menu__item {
   list-style-type: none;
   padding: 0;
-  margin-left: 5.625rem;
-}
-.header-menu__logo {
-  margin-left: 5.625rem;
 }
 .header-menu__link {
   text-decoration: none;
@@ -305,6 +305,7 @@ html {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
