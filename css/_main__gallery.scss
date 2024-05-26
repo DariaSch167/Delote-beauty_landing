@@ -47,9 +47,8 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 30%);
-    justify-content: space-evenly;
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 4rem;
   }
 
   &__card {

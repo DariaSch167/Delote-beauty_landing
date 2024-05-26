@@ -23,9 +23,9 @@
 // MAIN - offer section
 .offer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   justify-content: space-around;
-  row-gap: 4rem;
+  gap: 4rem;
   margin-top: $block_m-top;
 
   &__image {

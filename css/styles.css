@@ -168,9 +168,9 @@ h1 {
 
 .offer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   justify-content: space-around;
-  row-gap: 4rem;
+  gap: 4rem;
   margin-top: 7.5rem;
 }
 .offer__image {
@@ -273,9 +273,8 @@ h1 {
 }
 .gallery__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
-  justify-content: space-evenly;
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 4rem;
 }
 .gallery__card-image {
   display: flex;
