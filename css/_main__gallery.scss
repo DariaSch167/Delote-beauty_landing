@@ -4,7 +4,7 @@
   flex-direction: column;
   margin: $block_m-top 0;
 
-  & h2 {
+  &__title {
     font-size: 3rem;
     margin-bottom: 6rem;
     text-align: center;
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto 4rem;
-    width: 60%;
+    width: 80%;
 
     &-btn {
       display: inline-block;
@@ -48,13 +48,13 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    justify-content: space-around;
     gap: 4rem;
   }
 
   &__card {
     &-image {
       display: flex;
-      width: 100%;
       object-fit: cover;
     }
   }

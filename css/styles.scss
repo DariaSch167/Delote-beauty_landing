@@ -5,6 +5,7 @@
 @import "main__banner_side-contacts";
 @import "main__quote_offer_brands";
 @import "main__gallery";
+@import "mobile";
 
 html {
   box-sizing: border-box;
@@ -44,4 +45,6 @@ body {
 
 .main {
   flex-grow: 1;
+  width: 100%;
+  margin: 0 auto;
 }

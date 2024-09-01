@@ -13,10 +13,16 @@
   left: 50%; // option 1: center Header nav by defoult
   transform: translateX(-50%); // option 1
   // transition: all 0.3s ease-in-out; Figma option 2: center after contacts close
+  &__items__wrapper {
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
   &__items {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    align-items: center;
+    width: 100%;
     padding: 0;
   }
   &__item {
@@ -74,6 +80,7 @@
   font-size: 1.125rem;
   border-top: 1px solid $white;
   border-bottom: 1px solid $white;
+  max-width: 100%;
 
   &__items {
     list-style-type: none;
