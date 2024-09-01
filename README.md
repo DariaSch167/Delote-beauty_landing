@@ -2,6 +2,8 @@
 
 This page is made following the free mockup for the beauty salon.
 
+https://dariasch167.github.io/Delote-beauty_landing/
+
 ## Website features
 
 + Semantic info blocks
